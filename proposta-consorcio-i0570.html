@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8" />
+<title>Conseg · Proposta de Consórcio · Grupo I0570</title>
+<style>
+  @page { size: 1080px 1520px; margin: 0; }
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+  html, body {
+    background: #d9d1c0;
+    color: #12233f;
+    font-family: Inter, "IBM Plex Sans", Arial, sans-serif;
+    -webkit-font-smoothing: antialiased;
+    print-color-adjust: exact;
+    -webkit-print-color-adjust: exact;
+  }
+  .page {
+    width: 1080px;
+    height: 1520px;
+    background: #f6f1e4;
+    margin: 0 auto 24px;
+    padding: 48px 48px 56px;
+    position: relative;
+    overflow: hidden;
+  }
+  .rule-navy { position: absolute; top: 0; left: 0; right: 0; height: 8px; background: #12233f; }
+  .rule-gold { position: absolute; top: 8px; left: 0; right: 0; height: 3px; background: #c6a46a; }
+  .rule-bottom { position: absolute; bottom: 0; left: 0; right: 0; height: 6px; background: #12233f; }
+  .brand { display: flex; align-items: center; gap: 14px; margin-bottom: 28px; margin-top: 6px; }
+  .mark {
+    width: 52px; height: 52px; border-radius: 50%; background: #12233f; color: #f6f1e4;
+    border: 2px solid #c6a46a; display: flex; align-items: center; justify-content: center;
+    font-family: Fraunces, Georgia, serif; font-style: italic; font-weight: 500; font-size: 28px;
+    letter-spacing: -0.03em; line-height: 1; flex-shrink: 0; padding-bottom: 2px;
+  }
+  .wordmark { display: flex; flex-direction: column; gap: 3px; }
+  .wordmark strong { font-family: Fraunces, Georgia, serif; font-weight: 500; font-size: 22px; letter-spacing: -0.015em; line-height: 1; }
+  .wordmark span { font-size: 10px; letter-spacing: 0.18em; text-transform: uppercase; color: #6b6558; font-weight: 500; }
+  .eyebrow { font-size: 11px; letter-spacing: 3px; text-transform: uppercase; color: #8a8376; font-weight: 500; margin-bottom: 6px; }
+  .meta-line { font-size: 13px; color: #6b6558; margin-bottom: 18px; }
+  h1 { font-family: Fraunces, Georgia, serif; font-weight: 450; font-size: 36px; letter-spacing: -0.025em; line-height: 1.12; margin-bottom: 8px; }
+  .lede { font-size: 16px; color: #5c574c; margin-bottom: 22px; }
+  .grid-4 { display: grid; grid-template-columns: repeat(4, 234px); gap: 12px; margin-bottom: 12px; }
+  .card { background: #fffcf6; border: 1px solid #1c1d1a18; border-radius: 10px; padding: 12px 14px 13px; }
+  .card.meta { height: 92px; }
+  .card.kpi { height: 128px; }
+  .card .k { font-size: 10px; letter-spacing: 0.16em; text-transform: uppercase; color: #8a8376; font-weight: 500; margin-bottom: 8px; }
+  .card .v { font-family: Fraunces, Georgia, serif; font-size: 22px; font-weight: 500; letter-spacing: -0.025em; line-height: 1.12; }
+  .card .v.sm { font-size: 17px; }
+  .card .s { font-size: 12px; color: #6b6558; margin-top: 5px; line-height: 1.3; }
+  .reco { background: #12233f; color: #f6f1e4; border-radius: 14px; padding: 22px 24px 20px; margin: 16px 0 22px; width: 984px; min-height: 196px; }
+  .reco .star { font-size: 11px; letter-spacing: 0.22em; text-transform: uppercase; color: #d9c9a3; font-weight: 600; margin-bottom: 10px; }
+  .reco h2 { font-family: Fraunces, Georgia, serif; font-weight: 450; font-size: 24px; letter-spacing: -0.02em; margin-bottom: 6px; }
+  .reco .line { font-size: 16px; color: #f6f1e4; opacity: 0.92; margin-bottom: 12px; }
+  .reco .why { font-size: 14px; color: #d9c9a3; line-height: 1.45; }
+  .reco .why b { color: #f6f1e4; font-weight: 560; }
+  h3 { font-family: Fraunces, Georgia, serif; font-weight: 500; font-size: 22px; letter-spacing: -0.02em; margin: 4px 0 4px; }
+  .sec-sub { font-size: 14px; color: #6b6558; margin-bottom: 12px; }
+  table.faixas { width: 984px; border-collapse: collapse; background: #fffcf6; border: 1px solid #1c1d1a18; border-radius: 10px; overflow: hidden; }
+  table.faixas th { text-align: left; font-size: 10px; letter-spacing: 0.14em; text-transform: uppercase; color: #8a8376; font-weight: 500; padding: 11px 16px; border-bottom: 1px solid #1c1d1a18; background: #efe6d6; }
+  table.faixas td { padding: 11px 16px; font-size: 15px; border-bottom: 1px solid #efe6d6; vertical-align: middle; }
+  table.faixas tr:last-child td { border-bottom: 0; }
+  table.faixas .num { font-variant-numeric: tabular-nums; font-weight: 600; font-size: 16px; }
+  table.faixas .muted { color: #6b6558; font-weight: 500; }
+  table.faixas .range { font-weight: 560; }
+  .note { font-size: 12.5px; color: #6b6558; margin-top: 12px; line-height: 1.45; width: 984px; }
+  .chips { display: grid; grid-template-columns: repeat(4, 1fr); gap: 8px 10px; background: #fffcf6; border: 1px solid #1c1d1a18; border-radius: 10px; padding: 14px 16px; margin-bottom: 20px; width: 984px; }
+  .chips .item .k { font-size: 10px; letter-spacing: 0.14em; text-transform: uppercase; color: #8a8376; }
+  .chips .item .v { font-size: 15px; font-weight: 600; margin-top: 3px; }
+  .lances { display: grid; grid-template-columns: 1fr 1fr; gap: 12px; width: 984px; margin-bottom: 12px; }
+  .lance { background: #fffcf6; border: 1px solid #1c1d1a18; border-radius: 10px; overflow: hidden; }
+  .lance .hd { background: #12233f; color: #f6f1e4; padding: 12px 16px 11px; font-size: 15px; font-weight: 560; }
+  .lance .hd span { display: block; font-size: 12px; font-weight: 450; color: #d9c9a3; margin-top: 3px; }
+  .lance .bd { padding: 8px 16px 12px; }
+  .row { display: flex; justify-content: space-between; align-items: baseline; gap: 12px; padding: 8px 0; border-bottom: 1px solid #efe6d6; font-size: 14px; }
+  .row:last-child { border-bottom: 0; }
+  .row .lab { color: #6b6558; }
+  .row .val { font-weight: 600; text-align: right; font-variant-numeric: tabular-nums; }
+  .row.hero .val { font-family: Fraunces, Georgia, serif; font-size: 20px; font-weight: 500; color: #12233f; }
+  .pos { background: #fffcf6; border: 1px solid #1c1d1a18; border-radius: 10px; overflow: hidden; width: 984px; margin-bottom: 16px; }
+  .pos .hd { background: #12233f; color: #f6f1e4; padding: 11px 16px; font-size: 15px; font-weight: 560; }
+  .pos .cols { display: grid; grid-template-columns: 1fr 1fr 1fr; }
+  .pos .col { padding: 14px 16px; border-right: 1px solid #efe6d6; }
+  .pos .col:last-child { border-right: 0; }
+  .pos .col .k { font-size: 13.5px; font-weight: 600; margin-bottom: 4px; }
+  .pos .col .v { font-size: 13px; color: #6b6558; font-style: italic; }
+  .legal { background: #fffcf6; border: 1px solid #1c1d1a18; border-radius: 10px; padding: 16px 18px; width: 984px; margin-bottom: 8px; }
+  .legal h4 { font-size: 11px; letter-spacing: 0.16em; text-transform: uppercase; color: #8a8376; font-weight: 600; margin-bottom: 10px; }
+  .legal p { font-size: 12.5px; line-height: 1.5; color: #6b6558; margin-bottom: 8px; }
+  .legal p:last-child { margin-bottom: 0; }
+  .foot { position: absolute; left: 48px; right: 48px; bottom: 22px; display: flex; justify-content: space-between; align-items: flex-end; gap: 16px; font-size: 11px; color: #6b6558; line-height: 1.45; }
+  .foot .right { text-align: right; letter-spacing: 0.08em; }
+</style>
+</head>
+<body>
+<section class="page" id="p1">
+  <div class="rule-navy"></div>
+  <div class="rule-gold"></div>
+  <header class="brand">
+    <div class="mark">C</div>
+    <div class="wordmark"><strong>Conseg</strong><span>Seguros · Família Cândido · 1991</span></div>
+  </header>
+  <p class="eyebrow">Proposta personalizada</p>
+  <p class="meta-line">Cotação Nº SIM-I0570-200K-1609 · Emitida em 16/09/2026</p>
+  <h1>Sua proposta de Consórcio.</h1>
+  <p class="lede">Consórcio de imóvel · carta R$ 200.000 · grupo I0570 em formação</p>
+  <div class="grid-4">
+    <div class="card meta"><div class="k">Cliente</div><div class="v sm">Cliente</div><div class="s">perfil da simulação</div></div>
+    <div class="card meta"><div class="k">Administradora</div><div class="v sm">Porto Consórcio</div><div class="s">grupo I0570</div></div>
+    <div class="card meta"><div class="k">Vigência inicial</div><div class="v sm">16/09/2026</div><div class="s">16:33</div></div>
+    <div class="card meta"><div class="k">Proposta válida até</div><div class="v sm">23/09/2026</div><div class="s">7 dias · cota no portal</div></div>
+  </div>
+  <div class="grid-4">
+    <div class="card kpi"><div class="k">Parcela agora</div><div class="v">R$ 1.350,80</div><div class="s">1ª a 8ª com seguro</div></div>
+    <div class="card kpi"><div class="k">Crédito</div><div class="v">R$ 200 mil</div><div class="s">1 cota · carta imóvel</div></div>
+    <div class="card kpi"><div class="k">Prazo</div><div class="v">200x</div><div class="s">grupo I0570</div></div>
+    <div class="card kpi"><div class="k">Redutor</div><div class="v">25%</div><div class="s">campanha. Some. Sem data.</div></div>
+  </div>
+  <div class="reco">
+    <div class="star">★ Recomendação Conseg</div>
+    <h2>Porto Consórcio · grupo I0570</h2>
+    <p class="line">Entrada R$ 1.350,80 c/ seguro · redutor 25% até contemplação</p>
+    <p class="why"><b>Por que este grupo.</b> Carta R$ 200.000 · em formação · 200 meses · plano IMV CM TX23% T2% 12X R 25%. André confirma a cota no portal da administradora.</p>
+  </div>
+  <h3>02 Parcelas — quatro faixas</h3>
+  <p class="sec-sub">Uma opção. Sem ranking inventado. Valores da simulação de 16/09/2026.</p>
+  <table class="faixas">
+    <thead><tr><th>Faixa</th><th>Com seguro</th><th>Sem seguro</th></tr></thead>
+    <tbody>
+      <tr><td class="range">1ª a 8ª</td><td class="num">R$ 1.350,80</td><td class="num muted">R$ 1.255,80</td></tr>
+      <tr><td class="range">9ª a 12ª</td><td class="num">R$ 1.350,60</td><td class="num muted">R$ 1.255,60</td></tr>
+      <tr><td class="range">13ª a 199ª</td><td class="num">R$ 1.017,40</td><td class="num muted">R$ 922,40</td></tr>
+      <tr><td class="range">200ª</td><td class="num">R$ 1.037,40</td><td class="num muted">R$ 942,40</td></tr>
+    </tbody>
+  </table>
+  <p class="note">Seguro prestamista = R$ 95,00/mês em todas as 200 parcelas. Redutor de 25% na base. A 200ª inclui o fundo de reserva de 0,01%. Soma desta simulação (referência, não garantia): R$ 207.500 com seguro · R$ 188.500 sem seguro. O redutor some após a contemplação.</p>
+  <footer class="foot"><div>Sofia · Conseg Seguros · André Vitor · SUSEP 202040149 · (61) 3345-7939 · consegseguro.com.br</div><div class="right">1 / 2</div></footer>
+  <div class="rule-bottom"></div>
+</section>
+<section class="page" id="p2">
+  <div class="rule-navy"></div>
+  <div class="rule-gold"></div>
+  <header class="brand">
+    <div class="mark">C</div>
+    <div class="wordmark"><strong>Conseg</strong><span>Seguros · Família Cândido · 1991</span></div>
+  </header>
+  <p class="eyebrow">Grupo I0570 · condições</p>
+  <h1 style="font-size:32px;margin-bottom:16px;">Lances, taxas e contemplação.</h1>
+  <h3>03 Lances</h3>
+  <p class="sec-sub">Calculados sobre 1 cota. O percentual de 40% e o valor de R$ 100.000 são os números da simulação — os dois, sem reinterpretar.</p>
+  <div class="lances">
+    <article class="lance">
+      <div class="hd">Lance livre<span>0,00% · não ofertado nesta simulação</span></div>
+      <div class="bd">
+        <div class="row hero"><span class="lab">Valor para concorrer</span><span class="val">R$ 0,00</span></div>
+        <div class="row"><span class="lab">Recurso próprio</span><span class="val">Não aplicável</span></div>
+        <div class="row"><span class="lab">Embutido do crédito</span><span class="val">Não aplicável</span></div>
+        <div class="row"><span class="lab">FGTS</span><span class="val">Não aplicável</span></div>
+      </div>
+    </article>
+    <article class="lance">
+      <div class="hd">Lance fixo<span>40,00% · recurso próprio R$ 100.000</span></div>
+      <div class="bd">
+        <div class="row hero"><span class="lab">Valor para concorrer</span><span class="val">R$ 100.000</span></div>
+        <div class="row"><span class="lab">Recurso próprio</span><span class="val">R$ 100.000,00</span></div>
+        <div class="row"><span class="lab">Embutido desta simulação</span><span class="val">Não usado</span></div>
+        <div class="row"><span class="lab">FGTS</span><span class="val">Não aplicável</span></div>
+      </div>
+    </article>
+  </div>
+  <p class="note" style="margin-top:0;margin-bottom:18px;">Teto de lance embutido do plano: até 30% = R$ 60.000. É teto do regulamento, não oferta desta simulação.</p>
+  <h3>04 Taxas do grupo</h3>
+  <p class="sec-sub">Plano IMV CM TX23% T2% 12X R 25%.</p>
+  <div class="chips">
+    <div class="item"><div class="k">Tipo</div><div class="v">Em formação</div></div>
+    <div class="item"><div class="k">Prazo restante</div><div class="v">200 meses</div></div>
+    <div class="item"><div class="k">Adm. no plano</div><div class="v">23%</div></div>
+    <div class="item"><div class="k">Adm. mensal</div><div class="v">0,12%</div></div>
+    <div class="item"><div class="k">Adm. antecipada</div><div class="v">2,00% em 12x</div></div>
+    <div class="item"><div class="k">Fundo de reserva</div><div class="v">0,01%</div></div>
+    <div class="item"><div class="k">Seguro</div><div class="v">0,038%</div></div>
+    <div class="item"><div class="k">Assembleia</div><div class="v">Não informada</div></div>
+  </div>
+  <h3>05 Pós-contemplação</h3>
+  <p class="sec-sub">A simulação Porto não calculou o que acontece depois da contemplação.</p>
+  <article class="pos">
+    <div class="hd">Estimativas pós-contemplação</div>
+    <div class="cols">
+      <div class="col"><div class="k">Sorteio</div><div class="v">não simulada</div></div>
+      <div class="col"><div class="k">Lance livre</div><div class="v">não simulada</div></div>
+      <div class="col"><div class="k">Lance fixo</div><div class="v">não simulada</div></div>
+    </div>
+  </article>
+  <div class="legal">
+    <h4>Leia antes de seguir</h4>
+    <p>Esta simulação é estimativa. Não constitui proposta vinculante, não gera direito à contemplação e não promete data. Redutor de 25% é de campanha e some após a contemplação. Crédito e parcelas reajustam pela média INCC+IPCA no 14º mês da constituição do grupo; demais correções a cada 12 meses. Adesão sujeita a cota disponível. Seguro prestamista quita a cota em morte ou invalidez. Valores sujeitos à confirmação de André no portal da administradora.</p>
+    <p>No contrato de consórcio não há garantia da data de contemplação, pois esta só ocorre por meio de sorteio ou lance, conforme previsto na lei Federal 11.795/08. Conseg é corretora de seguros registrada na SUSEP sob o nº 202040149. O consórcio é regulado pelo BACEN.</p>
+  </div>
+  <footer class="foot"><div>Sofia · Conseg Seguros · André Vitor · SUSEP 202040149 · (61) 3345-7939 · consegseguro.com.br</div><div class="right">2 / 2</div></footer>
+  <div class="rule-bottom"></div>
+</section>
+</body>
+</html>
