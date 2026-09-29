@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8" />
+<title>Conseg · Proposta Auto · Gledistone Custodio · Allianz</title>
+<style>
+  @page { size: A4; margin: 0; }
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+  html, body { background: #d9d1c0; color: #12233f; font-family: Inter, "IBM Plex Sans", Arial, sans-serif; -webkit-font-smoothing: antialiased; print-color-adjust: exact; -webkit-print-color-adjust: exact; }
+  .page { width: 210mm; min-height: 297mm; background: #f6f1e4; margin: 0 auto 24px; padding: 18px 18px 22px; position: relative; overflow: hidden; }
+  .rule-navy { position: absolute; top: 0; left: 0; right: 0; height: 7px; background: #12233f; }
+  .rule-gold { position: absolute; top: 7px; left: 0; right: 0; height: 3px; background: #c6a46a; }
+  .rule-bottom { position: absolute; bottom: 0; left: 0; right: 0; height: 6px; background: #12233f; }
+  .brand { display: flex; align-items: center; gap: 10px; margin: 8px 0 12px; }
+  .mark { width: 36px; height: 36px; border-radius: 50%; background: #12233f; color: #f6f1e4; border: 1.5px solid #c6a46a; display: flex; align-items: center; justify-content: center; font-family: Fraunces, Georgia, serif; font-style: italic; font-size: 20px; }
+  .wordmark strong { font-family: Fraunces, Georgia, serif; font-weight: 500; font-size: 18px; display: block; }
+  .wordmark span { font-size: 8px; letter-spacing: 0.16em; text-transform: uppercase; color: #6b6558; }
+  .eyebrow { font-size: 9px; letter-spacing: 2.2px; text-transform: uppercase; color: #8a8376; font-weight: 500; }
+  .meta-line { font-size: 11px; color: #6b6558; margin: 4px 0 8px; }
+  h1 { font-family: Fraunces, Georgia, serif; font-weight: 450; font-size: 26px; letter-spacing: -0.025em; line-height: 1.12; }
+  .lede { font-size: 13px; color: #5c574c; margin: 4px 0 12px; }
+  .grid-4 { display: grid; grid-template-columns: repeat(4, 1fr); gap: 8px; margin-bottom: 8px; }
+  .card { background: #fffcf6; border: 1px solid #d7d0c2; border-radius: 8px; padding: 8px 10px; }
+  .card .k { font-size: 8px; letter-spacing: 0.14em; text-transform: uppercase; color: #8a8376; font-weight: 500; }
+  .card .v { font-family: Fraunces, Georgia, serif; font-size: 14px; margin-top: 3px; }
+  .card .s { font-size: 10px; color: #6b6558; margin-top: 2px; }
+  .chip .v { font-family: Inter, sans-serif; font-weight: 600; font-size: 12px; }
+  .reco { background: #12233f; color: #f6f1e4; border-radius: 12px; padding: 16px 18px; margin: 10px 0 10px; }
+  .reco .star { font-size: 9px; letter-spacing: 0.18em; text-transform: uppercase; color: #d9c9a3; font-weight: 600; }
+  .reco h2 { font-family: Fraunces, Georgia, serif; font-weight: 450; font-size: 22px; margin: 4px 0 4px; }
+  .reco .line { font-size: 13px; margin-bottom: 10px; }
+  .facts { display: grid; grid-template-columns: 1fr 1fr; gap: 4px 24px; font-size: 11.5px; }
+  .facts span { color: #d9c9a3; }
+  .facts b { color: #f6f1e4; font-weight: 600; float: right; }
+  .why { font-size: 11.5px; color: #6b6558; line-height: 1.45; margin-bottom: 10px; }
+  .alt, .ficha, .legal { background: #fffcf6; border: 1px solid #d7d0c2; border-radius: 8px; padding: 10px 12px; margin-bottom: 10px; }
+  .alt .k, .ficha .k, .legal .k { font-size: 8px; letter-spacing: 0.14em; text-transform: uppercase; color: #8a8376; font-weight: 600; margin-bottom: 4px; }
+  .alt .v { font-family: Fraunces, Georgia, serif; font-size: 15px; }
+  .alt .s, .ficha p, .legal p { font-size: 11px; color: #6b6558; line-height: 1.45; }
+  table { width: 100%; border-collapse: collapse; font-size: 10.5px; margin: 10px 0 12px; }
+  th { background: #12233f; color: #c6a46a; text-align: left; padding: 6px 7px; font-size: 8.5px; letter-spacing: 0.06em; text-transform: uppercase; }
+  td { padding: 5px 7px; border-bottom: 1px solid #efe6d6; }
+  tr:nth-child(even) td { background: #efe6d6; }
+  tr.reco-row td { background: #c6a46a; font-weight: 600; color: #12233f; }
+  .cols { display: grid; grid-template-columns: 1fr 1fr; gap: 10px; margin-bottom: 10px; }
+  .navy { background: #12233f; color: #f6f1e4; border-radius: 10px; padding: 12px 14px; }
+  .navy h3 { color: #c6a46a; font-size: 9px; letter-spacing: 0.14em; text-transform: uppercase; margin-bottom: 8px; }
+  .navy li { font-size: 11.5px; margin: 0 0 5px 14px; }
+  .paper h3 { font-size: 9px; letter-spacing: 0.14em; text-transform: uppercase; color: #8a8376; margin-bottom: 8px; }
+  .paper { background: #fffcf6; border: 1px solid #d7d0c2; border-radius: 10px; padding: 12px 14px; }
+  .paper li { font-size: 11.5px; color: #6b6558; margin: 0 0 5px 14px; }
+  .cta { background: #12233f; color: #f6f1e4; border-radius: 10px; padding: 12px 14px; margin-top: 8px; }
+  .cta .k { font-size: 9px; letter-spacing: 0.14em; text-transform: uppercase; color: #c6a46a; }
+  .cta h2 { font-family: Fraunces, Georgia, serif; font-size: 15px; margin: 4px 0; }
+  .cta p { font-size: 10.5px; color: #d9c9a3; line-height: 1.4; }
+  .foot { position: absolute; left: 18px; right: 18px; bottom: 10px; display: flex; justify-content: space-between; font-size: 9px; color: #6b6558; }
+  .print { position: sticky; top: 12px; z-index: 2; display: flex; justify-content: center; margin: 12px; }
+  .print button { background: #12233f; color: #f6f1e4; border: 0; border-radius: 999px; padding: 10px 18px; font: 600 13px Inter, sans-serif; cursor: pointer; }
+  @media print { body { background: #f6f1e4; } .print { display: none; } .page { margin: 0; box-shadow: none; page-break-after: always; } }
+</style>
+</head>
+<body>
+<div class="print"><button onclick="window.print()">Baixar / imprimir PDF</button></div>
+<section class="page">
+  <div class="rule-navy"></div><div class="rule-gold"></div>
+  <header class="brand"><div class="mark">C</div><div class="wordmark"><strong>Conseg</strong><span>Seguros · Família Cândido · 1991</span></div></header>
+  <p class="eyebrow">Proposta personalizada</p>
+  <p class="meta-line">Cotação Allianz 507795041 · Mesa 12670130/4ADCE6FA · 29/09/2026</p>
+  <h1>Sua proposta de Seguro Auto.</h1>
+  <p class="lede">Fiat Strada Freedom 1.3 Flex CD · Gledistone Custodio Alves</p>
+  <div class="grid-4">
+    <div class="card"><div class="k">Cliente</div><div class="v">Gledistone Custodio</div><div class="s">CPF 823.859.471-53 · 47 anos</div></div>
+    <div class="card"><div class="k">Veículo</div><div class="v">Strada Freedom 1.3</div><div class="s">2020/2021 · placa REJ4A96</div></div>
+    <div class="card"><div class="k">FIPE</div><div class="v">R$ 84.739,00</div><div class="s">cód. 001530-0 · 100% VMR</div></div>
+    <div class="card"><div class="k">Validade</div><div class="v">06/10/2026</div><div class="s">Allianz · mesa até 04/10</div></div>
+  </div>
+  <div class="grid-4">
+    <div class="card chip"><div class="k">Uso</div><div class="v">Particular</div></div>
+    <div class="card chip"><div class="k">Pernoite</div><div class="v">CEP 72426-080</div></div>
+    <div class="card chip"><div class="k">Residência</div><div class="v">Casa / sobrado</div></div>
+    <div class="card chip"><div class="k">Garagem</div><div class="v">Portão ou porteiro</div></div>
+    <div class="card chip"><div class="k">Bônus</div><div class="v">Classe 00</div></div>
+    <div class="card chip"><div class="k">Tipo</div><div class="v">Seguro novo</div></div>
+    <div class="card chip"><div class="k">18–25 anos</div><div class="v">Sem cobertura</div></div>
+    <div class="card chip"><div class="k">Vigência</div><div class="v">29/09/26 – 29/09/27</div></div>
+  </div>
+  <div class="reco">
+    <div class="star">★ Recomendação Conseg</div>
+    <h2>Allianz Ampliado</h2>
+    <p class="line">R$ 5.676,91 no ano · 10× de R$ 567,69 sem juros no cartão</p>
+    <div class="facts">
+      <div><span>Franquia reduzida</span><b>R$ 4.408,37</b></div>
+      <div><span>APP morte / invalidez</span><b>R$ 20.000 / 20.000</b></div>
+      <div><span>Casco</span><b>100% FIPE</b></div>
+      <div><span>Carro reserva</span><b>15 dias com AR</b></div>
+      <div><span>RCF materiais / corporais</span><b>R$ 150.000 / 150.000</b></div>
+      <div><span>Assistência 24h</span><b>Plano 3 · km livre</b></div>
+      <div><span>Danos morais e estéticos</span><b>R$ 20.000</b></div>
+      <div><span>Vidros / faróis / lanternas</span><b>Plano 2</b></div>
+    </div>
+  </div>
+  <p class="why">Por que Allianz. Menor prêmio da mesa compreensiva de 10 seguradoras. Maior RCF danos morais (R$ 20.000 vs R$ 5.000 nas outras 9) e maior APP (R$ 20.000 vs R$ 10.000). Assistência residencial gratuita. Líquido R$ 5.286,75 + IOF R$ 390,16.</p>
+  <div class="alt"><div class="k">Alternativa da mesa · se priorizar franquia menor</div><div class="v">Bradesco · R$ 5.845,50 · +R$ 168,59 no ano</div><div class="s">4× sem juros ou 10× de R$ 584,64 · franquia R$ 3.907,56 · km ilimitada · APP R$ 10.000 · danos morais R$ 5.000 · reserva 15 dias sem AR</div></div>
+  <div class="ficha"><div class="k">Ficha do risco</div><p>Proponente e condutor habitual: GLEDISTONE CUSTODIO ALVES · nasc. 02/02/1979 · masculino · solteiro · relação: o próprio. Endereço: Rua Jacarandá, Brasília/DF · CEP 72426-080. Uso particular · 15 a 50 km/dia · sem kit gás, sem blindagem, sem rastreador. Chassi 9BD281B31MYV66944. Cobertura pedida: compreensiva, franquia reduzida, valor de mercado referenciado. Consultor Luiz Carlos · código 2489595 · filial 75 · consegcn@terra.com.br.</p></div>
+  <footer class="foot"><div>Sofia · Conseg Seguros · André Vitor · SUSEP 202040149 · (61) 3345-7939 · (61) 99536-9057</div><div>1 / 2</div></footer>
+  <div class="rule-bottom"></div>
+</section>
+<section class="page">
+  <div class="rule-navy"></div><div class="rule-gold"></div>
+  <header class="brand"><div class="mark">C</div><div class="wordmark"><strong>Conseg</strong><span>Seguros · Família Cândido · 1991</span></div></header>
+  <p class="eyebrow">Mesa 29/09/2026 · 10 seguradoras</p>
+  <h1>Comparativo completo.</h1>
+  <p class="why">Todas: 100% FIPE · RCF DM/DC R$ 150.000 · vidros sim · faróis/lanternas/retrovisores sim · isenção 1ª franquia não. Fonte: Allianz 507795041 + mesa 12670130/4ADCE6FA. Nenhum prêmio inventado.</p>
+  <table>
+    <thead><tr><th>Seguradora</th><th>Prêmio total</th><th>Franquia</th><th>Assistência</th><th>Reserva</th><th>APP</th><th>D. morais</th></tr></thead>
+    <tbody>
+      <tr class="reco-row"><td>Allianz ★</td><td>R$ 5.676,91 · 10× 567,69</td><td>R$ 4.408,37</td><td>Plano 3 km livre</td><td>15 d c/ AR</td><td>R$ 20 mil</td><td>R$ 20 mil</td></tr>
+      <tr><td>Bradesco</td><td>R$ 5.845,50 · 4× / 10× 584,64</td><td>R$ 3.907,56</td><td>Km ilimitada</td><td>15 d s/ AR</td><td>R$ 10 mil</td><td>R$ 5 mil</td></tr>
+      <tr><td>Azul</td><td>R$ 6.647,86 · 10× s/ juros</td><td>R$ 6.704,00</td><td>Km ilimitada</td><td>15 d c/ AR</td><td>R$ 10 mil</td><td>R$ 5 mil</td></tr>
+      <tr><td>Itaú</td><td>R$ 7.384,42 · 10× s/ juros</td><td>R$ 6.704,00</td><td>Km ilimitada</td><td>15 d c/ AR</td><td>R$ 10 mil</td><td>R$ 5 mil</td></tr>
+      <tr><td>Porto Seguro</td><td>R$ 7.445,80 · 10× s/ juros</td><td>R$ 6.385,00</td><td>Km ilimitada</td><td>15 d c/ AR</td><td>R$ 10 mil</td><td>R$ 5 mil</td></tr>
+      <tr><td>Mitsui</td><td>R$ 7.718,73 · 10× s/ juros</td><td>R$ 6.704,00</td><td>Km ilimitada</td><td>15 d c/ AR</td><td>R$ 10 mil</td><td>R$ 5 mil</td></tr>
+      <tr><td>Yelum</td><td>R$ 7.904,62 · 12× s/ juros</td><td>R$ 3.339,00</td><td>Km ilimitada</td><td>15 d s/ AR</td><td>R$ 10 mil</td><td>R$ 5 mil</td></tr>
+      <tr><td>Tokio Marine</td><td>R$ 9.028,41 · 12× s/ juros</td><td>R$ 4.364,00</td><td>Km ilimitada</td><td>15 d c/ AR</td><td>R$ 10 mil</td><td>R$ 5 mil</td></tr>
+      <tr><td>HDI</td><td>R$ 10.269,81 · 12× s/ juros</td><td>R$ 4.893,66</td><td>Km ilimitada</td><td>15 d s/ AR</td><td>R$ 10 mil</td><td>R$ 5 mil</td></tr>
+      <tr><td>Zurich</td><td>R$ 10.863,33 · 12× s/ juros</td><td>R$ 3.855,96</td><td>Km ilimitada</td><td>15 d c/ AR</td><td>R$ 10 mil</td><td>R$ 5 mil</td></tr>
+    </tbody>
+  </table>
+  <div class="cols">
+    <div class="navy"><h3>Por que Allianz Ampliado</h3><ol><li>Menor prêmio da mesa — R$ 5.676,91. Economia R$ 169 vs Bradesco, R$ 1.769 vs Porto, R$ 5.186 vs Zurich.</li><li>Melhor RC da mesa — danos morais R$ 20 mil e APP R$ 20 mil.</li><li>10× de R$ 567,69 sem juros no cartão. Débito até 6× sem juros.</li><li>Plano 3 com guincho km livre, residencial grátis e reserva 15 dias com AR.</li></ol></div>
+    <div class="paper"><h3>Atenção ao emitir</h3><ul><li>Confirmar garagem SIM com portão ou porteiro.</li><li>CEP 72426-080. Sem cobertura 18–25.</li><li>Vistoria prévia obrigatória. Questionário assinado.</li><li>Aceitação sujeita à análise Allianz (até 25 dias).</li><li>A proposta não é apólice. Veículo ainda sem seguro.</li><li>Validade Allianz 06/10/2026 · mesa 04/10/2026.</li></ul></div>
+  </div>
+  <div class="legal"><div class="k">Alternativa econômica · produto diferente · não é a mesa</div><p><b>Suhai compreensiva R$ 3.328,60</b> · 3× sem juros · franquia R$ 3.845 · guincho 500 km. Cálculo 185755303/2026 · validade 5 dias. Não entra na recomendação principal.</p></div>
+  <p class="why">Outras faixas Allianz (não recomendadas neste papel): Roubo e Furto R$ 3.126,43 (não cobre colião) · Básico R$ 5.538,32 · Completo R$ 5.860,53 · Master R$ 6.118,33 · Exclusivo R$ 6.625,30.</p>
+  <div class="cta"><div class="k">Próximo passo</div><h2>Para contratar Allianz Ampliado em 10× de R$ 567,69, responda nesta conversa.</h2><p>Luiz Carlos · Conseg Corretora Nacional de Seguros LTDA · Rua das Carnaúbas, lote 4, sala 403 · Ed. Plaza Mall · Águas Claras · Brasília/DF<br>consegcn@terra.com.br · SUSEP 202040149 · (61) 3345-7939 · (61) 99536-9057 · Brasília desde 1991</p></div>
+  <footer class="foot"><div>Sofia · Conseg Seguros · André Vitor · SUSEP 202040149 · (61) 3345-7939 · (61) 99536-9057</div><div>2 / 2</div></footer>
+  <div class="rule-bottom"></div>
+</section>
+</body>
+</html>
