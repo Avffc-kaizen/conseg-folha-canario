@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8" />
+<title>Conseg · Proposta Auto · Lúcio Caixeta · Bradesco Ranger Limited</title>
+<style>
+  @page { size: A4; margin: 0; }
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+  html, body { background: #d9d1c0; color: #12233f; font-family: Inter, "IBM Plex Sans", Arial, sans-serif; -webkit-font-smoothing: antialiased; print-color-adjust: exact; -webkit-print-color-adjust: exact; }
+  .page { width: 210mm; min-height: 297mm; background: #f6f1e4; margin: 0 auto 24px; padding: 16px 18px 22px; position: relative; overflow: hidden; }
+  .rule-navy { position: absolute; top: 0; left: 0; right: 0; height: 7px; background: #12233f; }
+  .rule-gold { position: absolute; top: 7px; left: 0; right: 0; height: 3px; background: #c6a46a; }
+  .rule-bottom { position: absolute; bottom: 0; left: 0; right: 0; height: 6px; background: #12233f; }
+  .brand { display: flex; align-items: center; gap: 10px; margin: 8px 0 10px; }
+  .mark { width: 36px; height: 36px; border-radius: 50%; background: #12233f; color: #f6f1e4; border: 1.5px solid #c6a46a; display: flex; align-items: center; justify-content: center; font-family: Fraunces, Georgia, serif; font-style: italic; font-size: 20px; }
+  .wordmark strong { font-family: Fraunces, Georgia, serif; font-weight: 500; font-size: 18px; display: block; }
+  .wordmark span { font-size: 8px; letter-spacing: 0.16em; text-transform: uppercase; color: #6b6558; }
+  .eyebrow { font-size: 9px; letter-spacing: 2.2px; text-transform: uppercase; color: #8a8376; font-weight: 500; }
+  .meta-line { font-size: 11px; color: #6b6558; margin: 3px 0 6px; }
+  h1 { font-family: Fraunces, Georgia, serif; font-weight: 450; font-size: 24px; letter-spacing: -0.025em; line-height: 1.12; }
+  .lede { font-size: 13px; color: #5c574c; margin: 3px 0 8px; }
+  .hero { display: grid; grid-template-columns: 1.15fr 1fr; gap: 10px; margin-bottom: 8px; }
+  .hero img { width: 100%; height: 118px; object-fit: cover; object-position: 50% 45%; border-radius: 10px; border: 1px solid #d7d0c2; background: #efe6d6; }
+  .hero .cap { font-size: 9px; color: #8a8376; margin-top: 3px; }
+  .grid-4 { display: grid; grid-template-columns: repeat(4, 1fr); gap: 7px; margin-bottom: 8px; }
+  .card { background: #fffcf6; border: 1px solid #d7d0c2; border-radius: 8px; padding: 7px 9px; }
+  .card .k { font-size: 8px; letter-spacing: 0.14em; text-transform: uppercase; color: #8a8376; font-weight: 500; }
+  .card .v { font-family: Fraunces, Georgia, serif; font-size: 13px; margin-top: 2px; }
+  .card .s { font-size: 10px; color: #6b6558; margin-top: 2px; }
+  .chip .v { font-family: Inter, sans-serif; font-weight: 600; font-size: 11.5px; }
+  .reco { background: #12233f; color: #f6f1e4; border-radius: 12px; padding: 12px 14px; margin: 8px 0; }
+  .reco .star { font-size: 8.5px; letter-spacing: 0.16em; text-transform: uppercase; color: #d9c9a3; font-weight: 600; }
+  .reco h2 { font-family: Fraunces, Georgia, serif; font-weight: 450; font-size: 20px; margin: 3px 0 2px; }
+  .reco .line { font-size: 12px; margin-bottom: 8px; }
+  .facts { display: grid; grid-template-columns: 1fr 1fr; gap: 3px 14px; font-size: 10.5px; }
+  .facts span { color: #d9c9a3; }
+  .facts b { color: #f6f1e4; font-weight: 600; float: right; }
+  .alt { background: #fffcf6; border: 1px solid #c6a46a; border-radius: 12px; padding: 10px 12px; margin: 0 0 8px; }
+  .alt .star { font-size: 8.5px; letter-spacing: 0.16em; text-transform: uppercase; color: #8a8376; font-weight: 600; }
+  .alt h2 { font-family: Fraunces, Georgia, serif; font-weight: 450; font-size: 16px; margin: 2px 0 2px; }
+  .alt .line { font-size: 12px; color: #5c574c; margin-bottom: 4px; }
+  .alt p { font-size: 11px; color: #6b6558; line-height: 1.4; }
+  .why { font-size: 11px; color: #6b6558; line-height: 1.4; margin-bottom: 8px; }
+  .ficha, .legal { background: #fffcf6; border: 1px solid #d7d0c2; border-radius: 8px; padding: 8px 11px; margin-bottom: 8px; }
+  .ficha .k, .legal .k { font-size: 8px; letter-spacing: 0.14em; text-transform: uppercase; color: #8a8376; font-weight: 600; margin-bottom: 3px; }
+  .ficha p, .legal p { font-size: 10.5px; color: #6b6558; line-height: 1.4; }
+  table { width: 100%; border-collapse: collapse; font-size: 10px; margin: 8px 0 10px; }
+  th { background: #12233f; color: #c6a46a; text-align: left; padding: 5px 6px; font-size: 8px; letter-spacing: 0.06em; text-transform: uppercase; }
+  td { padding: 4px 6px; border-bottom: 1px solid #efe6d6; }
+  tr:nth-child(even) td { background: #efe6d6; }
+  tr.reco-row td { background: #c6a46a; font-weight: 600; color: #12233f; }
+  .cols { display: grid; grid-template-columns: 1fr 1fr; gap: 8px; margin-bottom: 8px; }
+  .navy { background: #12233f; color: #f6f1e4; border-radius: 10px; padding: 11px 13px; }
+  .navy h3 { color: #c6a46a; font-size: 9px; letter-spacing: 0.14em; text-transform: uppercase; margin-bottom: 6px; }
+  .navy li { font-size: 11px; margin: 0 0 4px 14px; }
+  .paper { background: #fffcf6; border: 1px solid #d7d0c2; border-radius: 10px; padding: 11px 13px; }
+  .paper h3 { font-size: 9px; letter-spacing: 0.14em; text-transform: uppercase; color: #8a8376; margin-bottom: 6px; }
+  .paper li { font-size: 11px; color: #6b6558; margin: 0 0 4px 14px; }
+  .cta { background: #12233f; color: #f6f1e4; border-radius: 10px; padding: 11px 13px; margin-top: 6px; }
+  .cta .k { font-size: 9px; letter-spacing: 0.14em; text-transform: uppercase; color: #c6a46a; }
+  .cta h2 { font-family: Fraunces, Georgia, serif; font-size: 14px; margin: 3px 0; }
+  .cta p { font-size: 10.5px; color: #d9c9a3; line-height: 1.4; }
+  .foot { position: absolute; left: 18px; right: 18px; bottom: 10px; display: flex; justify-content: space-between; font-size: 9px; color: #6b6558; }
+  .print { position: sticky; top: 12px; z-index: 2; display: flex; justify-content: center; margin: 12px; }
+  .print button { background: #12233f; color: #f6f1e4; border: 0; border-radius: 999px; padding: 10px 18px; font: 600 13px Inter, sans-serif; cursor: pointer; }
+  @media print { body { background: #f6f1e4; } .print { display: none; } .page { margin: 0; box-shadow: none; page-break-after: always; } }
+</style>
+</head>
+<body>
+<div class="print"><button onclick="window.print()">Baixar / imprimir PDF</button></div>
+<section class="page">
+  <div class="rule-navy"></div><div class="rule-gold"></div>
+  <header class="brand"><div class="mark">C</div><div class="wordmark"><strong>Conseg</strong><span>Seguros · Família Cândido · 1991</span></div></header>
+  <p class="eyebrow">Proposta personalizada · Renovação Bradesco</p>
+  <p class="meta-line">Bradesco 0833635163/03 · Mesa 12671102/BAF9C60F · 30/09/2026</p>
+  <h1>Sua proposta de Seguro Auto.</h1>
+  <p class="lede">Ford Ranger Limited 3.2 4×4 Diesel Aut. · Lúcio Flávio Caixeta</p>
+  <div class="hero">
+    <div>
+      <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/2/28/Ford_Ranger_Limited_2017_%2850070426006%29.jpg/1280px-Ford_Ranger_Limited_2017_%2850070426006%29.jpg" alt="Ford Ranger Limited 2017 — mesma geração 2016/2017" />
+      <p class="cap">Ranger Limited 2017 · geração 2016/2017 · placa PAR9614 · diesel 3.2 4×4 CD</p>
+    </div>
+    <div class="grid-4" style="grid-template-columns:1fr 1fr;margin:0;">
+      <div class="card"><div class="k">Cliente / condutor</div><div class="v">Lúcio F. Caixeta</div><div class="s">CPF 004.682.826-53</div></div>
+      <div class="card"><div class="k">Nascimento</div><div class="v">14/02/1934</div><div class="s">masculino · casado</div></div>
+      <div class="card"><div class="k">FIPE</div><div class="v">R$ 128.790</div><div class="s">cód. 003364-2 · 100% VMR</div></div>
+      <div class="card"><div class="k">Bônus</div><div class="v">Classe 8</div><div class="s">0 sinistro · Bradesco atual</div></div>
+    </div>
+  </div>
+  <div class="grid-4">
+    <div class="card chip"><div class="k">Uso</div><div class="v">Particular</div></div>
+    <div class="card chip"><div class="k">Pernoite</div><div class="v">CEP 70774-070</div></div>
+    <div class="card chip"><div class="k">Residência</div><div class="v">Apto / flat</div></div>
+    <div class="card chip"><div class="k">Garagem</div><div class="v">Portão ou porteiro</div></div>
+    <div class="card chip"><div class="k">Placa</div><div class="v">PAR9614</div></div>
+    <div class="card chip"><div class="k">18–25 anos</div><div class="v">Sem cobertura</div></div>
+    <div class="card chip"><div class="k">Vence atual</div><div class="v">13/10/2026</div></div>
+    <div class="card chip"><div class="k">Tipo</div><div class="v">Renovação 0 sinistro</div></div>
+  </div>
+  <div class="reco">
+    <div class="star">★ Recomendação Conseg · 1 ano · renovar na atual</div>
+    <h2>Bradesco Auto Tradicional</h2>
+    <p class="line">R$ 3.213,26 no ano · 6× de R$ 535,54 s/ juros no débito · 10× de R$ 321,33 no cartão</p>
+    <div class="facts">
+      <div><span>Franquia reduzida</span><b>R$ 5.091,00</b></div>
+      <div><span>Casco</span><b>100% FIPE</b></div>
+      <div><span>RCF DM / DC</span><b>R$ 150 mil / 150 mil</b></div>
+      <div><span>Danos morais</span><b>R$ 10.000</b></div>
+      <div><span>APP morte / invalidez</span><b>R$ 5 mil / 5 mil</b></div>
+      <div><span>Carro reserva</span><b>15 dias</b></div>
+      <div><span>Assistência 24h</span><b>Dia/Noite · passeio limitado</b></div>
+      <div><span>Vidros</span><b>Protegido Plus</b></div>
+    </div>
+  </div>
+  <div class="alt">
+    <div class="star">Alternativa da mesa · se quiser APP 20k e franquia menor</div>
+    <h2>Allianz · R$ 7.043,76 em 10× de R$ 704,38</h2>
+    <p class="line">Franquia R$ 3.459 · RCF 100/100 · morais 10k · APP 20k · Plano 3 · teto solar · reserva 15 c/ AR · martelinho · buracos</p>
+    <p>Custa R$ 3.830 a mais no ano. Entra só se APP 20 mil, franquia menor e cobertura de teto/buracos forem o critério — não o preço.</p>
+  </div>
+  <p class="why"><b>Por que Bradesco.</b> Renovação da apólice atual, bônus 8, zero sinistro. Prêmio R$ 3.213 — menos da metade da Allianz (R$ 7.044) e R$ 6.746 abaixo da HDI. RCF 150/150, acima dos R$ 100 mil da mesa. Líquido R$ 2.992,43 + IOF R$ 220,83. Cartão Bradesco até 12× de R$ 267,78 sem juros. Carta Verde e extensão Mercosul. Martelinho e reparo rápido inclusos.</p>
+  <div class="ficha"><div class="k">Ficha do risco</div><p>Proponente e condutor: LUCIO FLAVIO CAIXETA · nasc. 14/02/1934 · CPF 004.682.826-53 · masculino · casado · SQN 315 Bloco G, Brasília/DF. Uso particular · 15 a 50 km/dia · apartamento/flat · garagem com portão ou porteiro · CEP 70774-070 · sem kit gás, sem blindagem, sem rastreador. Chassi 8AFAR23L7HJ436144. Renovação Bradesco · cia 544 · 0 sinistro · bônus 8 · vence 13/10/2026. Consultor Luiz Carlos · sucursal 836 · CPD 435093.</p></div>
+  <footer class="foot"><div>Sofia · Conseg Seguros · André · SUSEP 202040149 · (61) 3345-7939 · (61) 99536-9057</div><div>1 / 2</div></footer>
+  <div class="rule-bottom"></div>
+</section>
+<section class="page">
+  <div class="rule-navy"></div><div class="rule-gold"></div>
+  <header class="brand"><div class="mark">C</div><div class="wordmark"><strong>Conseg</strong><span>Seguros · Família Cândido · 1991</span></div></header>
+  <p class="eyebrow">Mesa 29/09/2026 · 5 seguradoras + Bradesco avulsa · validade 04/10</p>
+  <h1>Comparativo completo.</h1>
+  <p class="why">Todas 100% FIPE. Mesa: RCF 100/100. Bradesco avulsa: RCF 150/150. Fonte: mesa 12671102/BAF9C60F + Bradesco 0833635163/03. Nenhum prêmio inventado. Bradesco não consta na mesa — é a cotação de renovação da apólice atual.</p>
+  <table>
+    <thead><tr><th>Seguradora</th><th>Prêmio</th><th>Parcelas</th><th>Franquia</th><th>RCF / APP</th><th>Reserva</th></tr></thead>
+    <tbody>
+      <tr class="reco-row"><td>Bradesco ★</td><td>R$ 3.213,26</td><td>6× débito / 10× cartão</td><td>R$ 5.091</td><td>150/150 · 5k</td><td>15 d</td></tr>
+      <tr><td>Allianz</td><td>R$ 7.043,76</td><td>10× s/ juros</td><td>R$ 3.459</td><td>100/100 · 20k</td><td>15 d c/ AR</td></tr>
+      <tr><td>HDI</td><td>R$ 9.959,07</td><td>12× s/ juros</td><td>R$ 3.700</td><td>100/100 · 10k</td><td>15 d s/ AR</td></tr>
+      <tr><td>Tokio Marine</td><td>R$ 10.183,35</td><td>12× s/ juros</td><td>R$ 3.890</td><td>100/100 · 10k</td><td>15 d c/ AR</td></tr>
+      <tr><td>Yelum</td><td>R$ 10.207,30</td><td>12× s/ juros</td><td>R$ 2.920</td><td>100/100 · 10k</td><td>15 d s/ AR</td></tr>
+      <tr><td>Mapfre</td><td>R$ 13.318,68</td><td>12× s/ juros</td><td>R$ 3.839</td><td>100/100 · 10k</td><td>15 d c/ AR</td></tr>
+    </tbody>
+  </table>
+  <div class="cols">
+    <div class="navy"><h3>Por que Bradesco</h3><ol><li>Renovação da atual — bônus 8, zero sinistro. Prêmio R$ 3.213 vs R$ 7.044 da Allianz.</li><li>RCF 150/150, acima dos R$ 100 mil da mesa. Morais R$ 10 mil.</li><li>6× de R$ 535,54 no débito ou 12× de R$ 267,78 no cartão Bradesco.</li><li>Vidro Plus, martelinho, reparo rápido, Carta Verde e Mercosul.</li></ol></div>
+    <div class="paper"><h3>Como pagar o Bradesco</h3><ul><li>Débito: 1× R$ 3.213,24 até 6× R$ 535,54 s/ juros. 7×+ com juros.</li><li>Cartão / Cartão Bradesco: 1× R$ 3.213,24 · 6× R$ 535,55 · 10× R$ 321,33.</li><li>Cartão Bradesco: 12× de R$ 267,78 s/ juros.</li><li>Carnê: 4× s/ juros; 5× em diante com juros.</li><li>Allianz da mesa: 10× de R$ 704,38 s/ juros no cartão.</li></ul></div>
+  </div>
+  <div class="legal"><div class="k">Atenção ao emitir</div><p>Apólice Bradesco atual vence 13/10/2026. Mesa vale até 04/10. Cotação Bradesco até 07/10. Sem aceite, a Ranger fica descoberta. Confirmar garagem SIM com portão ou porteiro · CEP 70774-070 · apto. Sem cobertura 18–25. Condutor = o próprio segurado. Zero sinistro informado. Assistência Bradesco é passeio limitado — não é km livre. APP 5 mil vs 20 mil da Allianz. Cálculo não pressupõe aceitação do risco. A proposta não é apólice.</p></div>
+  <div class="cta"><div class="k">Próximo passo</div><h2>Para renovar no Bradesco em 6× de R$ 535,54 — ou Allianz em 10× de R$ 704,38 se APP 20k for o critério — responda nesta conversa.</h2><p>Luiz Carlos · Conseg Corretora Nacional de Seguros LTDA · Rua das Carnaúbas, lote 4, sala 403 · Ed. Plaza Mall · Águas Claras · Brasília/DF<br>consegcn@terra.com.br · SUSEP 202040149 · (61) 3345-7939 · (61) 99536-9057 · Brasília desde 1991</p></div>
+  <footer class="foot"><div>Sofia · Conseg Seguros · André · SUSEP 202040149 · (61) 3345-7939 · (61) 99536-9057</div><div>2 / 2</div></footer>
+  <div class="rule-bottom"></div>
+</section>
+</body>
+</html>
