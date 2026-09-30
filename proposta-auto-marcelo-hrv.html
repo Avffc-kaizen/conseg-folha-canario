@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8" />
+<title>Conseg · Proposta Auto · Marcelo Pinto da Luz · Allianz + Porto 2 anos</title>
+<style>
+  @page { size: A4; margin: 0; }
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+  html, body { background: #d9d1c0; color: #12233f; font-family: Inter, "IBM Plex Sans", Arial, sans-serif; -webkit-font-smoothing: antialiased; print-color-adjust: exact; -webkit-print-color-adjust: exact; }
+  .page { width: 210mm; min-height: 297mm; background: #f6f1e4; margin: 0 auto 24px; padding: 16px 18px 22px; position: relative; overflow: hidden; }
+  .rule-navy { position: absolute; top: 0; left: 0; right: 0; height: 7px; background: #12233f; }
+  .rule-gold { position: absolute; top: 7px; left: 0; right: 0; height: 3px; background: #c6a46a; }
+  .rule-bottom { position: absolute; bottom: 0; left: 0; right: 0; height: 6px; background: #12233f; }
+  .brand { display: flex; align-items: center; gap: 10px; margin: 8px 0 10px; }
+  .mark { width: 36px; height: 36px; border-radius: 50%; background: #12233f; color: #f6f1e4; border: 1.5px solid #c6a46a; display: flex; align-items: center; justify-content: center; font-family: Fraunces, Georgia, serif; font-style: italic; font-size: 20px; }
+  .wordmark strong { font-family: Fraunces, Georgia, serif; font-weight: 500; font-size: 18px; display: block; }
+  .wordmark span { font-size: 8px; letter-spacing: 0.16em; text-transform: uppercase; color: #6b6558; }
+  .eyebrow { font-size: 9px; letter-spacing: 2.2px; text-transform: uppercase; color: #8a8376; font-weight: 500; }
+  .meta-line { font-size: 11px; color: #6b6558; margin: 3px 0 6px; }
+  h1 { font-family: Fraunces, Georgia, serif; font-weight: 450; font-size: 24px; letter-spacing: -0.025em; line-height: 1.12; }
+  .lede { font-size: 13px; color: #5c574c; margin: 3px 0 8px; }
+  .hero { display: grid; grid-template-columns: 1.15fr 1fr; gap: 10px; margin-bottom: 8px; }
+  .hero img { width: 100%; height: 118px; object-fit: cover; object-position: 50% 55%; border-radius: 10px; border: 1px solid #d7d0c2; background: #efe6d6; }
+  .hero .cap { font-size: 9px; color: #8a8376; margin-top: 3px; }
+  .grid-4 { display: grid; grid-template-columns: repeat(4, 1fr); gap: 7px; margin-bottom: 8px; }
+  .card { background: #fffcf6; border: 1px solid #d7d0c2; border-radius: 8px; padding: 7px 9px; }
+  .card .k { font-size: 8px; letter-spacing: 0.14em; text-transform: uppercase; color: #8a8376; font-weight: 500; }
+  .card .v { font-family: Fraunces, Georgia, serif; font-size: 13px; margin-top: 2px; }
+  .card .s { font-size: 10px; color: #6b6558; margin-top: 2px; }
+  .chip .v { font-family: Inter, sans-serif; font-weight: 600; font-size: 11.5px; }
+  .duo { display: grid; grid-template-columns: 1.08fr 1fr; gap: 8px; margin: 8px 0; }
+  .reco { background: #12233f; color: #f6f1e4; border-radius: 12px; padding: 12px 14px; }
+  .reco .star { font-size: 8.5px; letter-spacing: 0.16em; text-transform: uppercase; color: #d9c9a3; font-weight: 600; }
+  .reco h2, .altcard h2 { font-family: Fraunces, Georgia, serif; font-weight: 450; font-size: 18px; margin: 3px 0 2px; }
+  .reco .line { font-size: 12px; margin-bottom: 7px; }
+  .facts { display: grid; grid-template-columns: 1fr 1fr; gap: 3px 12px; font-size: 10.5px; }
+  .facts span { color: #d9c9a3; }
+  .facts b { color: #f6f1e4; font-weight: 600; float: right; }
+  .altcard { background: #fffcf6; border: 1px solid #d7d0c2; border-radius: 12px; padding: 12px 14px; }
+  .altcard .star { font-size: 8.5px; letter-spacing: 0.16em; text-transform: uppercase; color: #8a8376; font-weight: 600; }
+  .altcard .line { font-size: 12px; color: #5c574c; margin-bottom: 7px; }
+  .altcard .facts span { color: #8a8376; }
+  .altcard .facts b { color: #12233f; }
+  .why { font-size: 11px; color: #6b6558; line-height: 1.4; margin-bottom: 8px; }
+  .ficha, .legal { background: #fffcf6; border: 1px solid #d7d0c2; border-radius: 8px; padding: 8px 11px; margin-bottom: 8px; }
+  .ficha .k, .legal .k { font-size: 8px; letter-spacing: 0.14em; text-transform: uppercase; color: #8a8376; font-weight: 600; margin-bottom: 3px; }
+  .ficha p, .legal p { font-size: 10.5px; color: #6b6558; line-height: 1.4; }
+  table { width: 100%; border-collapse: collapse; font-size: 10px; margin: 8px 0 10px; }
+  th { background: #12233f; color: #c6a46a; text-align: left; padding: 5px 6px; font-size: 8px; letter-spacing: 0.06em; text-transform: uppercase; }
+  td { padding: 4px 6px; border-bottom: 1px solid #efe6d6; }
+  tr:nth-child(even) td { background: #efe6d6; }
+  tr.reco-row td { background: #c6a46a; font-weight: 600; color: #12233f; }
+  tr.porto-row td { background: #efe6d6; font-weight: 600; }
+  .cols { display: grid; grid-template-columns: 1fr 1fr; gap: 8px; margin-bottom: 8px; }
+  .navy { background: #12233f; color: #f6f1e4; border-radius: 10px; padding: 11px 13px; }
+  .navy h3 { color: #c6a46a; font-size: 9px; letter-spacing: 0.14em; text-transform: uppercase; margin-bottom: 6px; }
+  .navy li { font-size: 11px; margin: 0 0 4px 14px; }
+  .paper { background: #fffcf6; border: 1px solid #d7d0c2; border-radius: 10px; padding: 11px 13px; }
+  .paper h3 { font-size: 9px; letter-spacing: 0.14em; text-transform: uppercase; color: #8a8376; margin-bottom: 6px; }
+  .paper li { font-size: 11px; color: #6b6558; margin: 0 0 4px 14px; }
+  .cta { background: #12233f; color: #f6f1e4; border-radius: 10px; padding: 11px 13px; margin-top: 6px; }
+  .cta .k { font-size: 9px; letter-spacing: 0.14em; text-transform: uppercase; color: #c6a46a; }
+  .cta h2 { font-family: Fraunces, Georgia, serif; font-size: 14px; margin: 3px 0; }
+  .cta p { font-size: 10.5px; color: #d9c9a3; line-height: 1.4; }
+  .foot { position: absolute; left: 18px; right: 18px; bottom: 10px; display: flex; justify-content: space-between; font-size: 9px; color: #6b6558; }
+  .print { position: sticky; top: 12px; z-index: 2; display: flex; justify-content: center; margin: 12px; }
+  .print button { background: #12233f; color: #f6f1e4; border: 0; border-radius: 999px; padding: 10px 18px; font: 600 13px Inter, sans-serif; cursor: pointer; }
+  @media print { body { background: #f6f1e4; } .print { display: none; } .page { margin: 0; box-shadow: none; page-break-after: always; } }
+</style>
+</head>
+<body>
+<div class="print"><button onclick="window.print()">Baixar / imprimir PDF</button></div>
+<section class="page">
+  <div class="rule-navy"></div><div class="rule-gold"></div>
+  <header class="brand"><div class="mark">C</div><div class="wordmark"><strong>Conseg</strong><span>Seguros · Família Cândido · 1991</span></div></header>
+  <p class="eyebrow">Proposta personalizada · Renovação</p>
+  <p class="meta-line">Allianz 507265275 · Mesa 12661659/EB3C7726 · Porto 6303363579 · 30/09/2026</p>
+  <h1>Sua proposta de Seguro Auto.</h1>
+  <p class="lede">Honda HR-V Touring 1.5 Turbo · Marcelo de Carvalho Pinto da Luz</p>
+  <div class="hero">
+    <div>
+      <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/8/8a/2022_Honda_HR-V_1.8_EX_%28Brazil%29.jpg/1280px-2022_Honda_HR-V_1.8_EX_%28Brazil%29.jpg" alt="Honda HR-V geração 2016–2021 — mesmo corpo do Touring 2019/2020" />
+      <p class="cap">HR-V geração 2016–2021 · referência visual do Touring 2019/2020 · placa PBW1171</p>
+    </div>
+    <div class="grid-4" style="grid-template-columns:1fr 1fr;margin:0;">
+      <div class="card"><div class="k">Cliente</div><div class="v">Marcelo Pinto da Luz</div><div class="s">CPF 296.216.231-20</div></div>
+      <div class="card"><div class="k">Condutora</div><div class="v">Luciana Caixeta</div><div class="s">35 anos · cônjuge</div></div>
+      <div class="card"><div class="k">FIPE</div><div class="v">R$ 121.422</div><div class="s">cód. 014102-0 · 100% VMR</div></div>
+      <div class="card"><div class="k">Bônus</div><div class="v">Classe 10</div><div class="s">0 sinistros · Porto atual</div></div>
+    </div>
+  </div>
+  <div class="grid-4">
+    <div class="card chip"><div class="k">Uso</div><div class="v">Particular</div></div>
+    <div class="card chip"><div class="k">Pernoite</div><div class="v">CEP 70364-060</div></div>
+    <div class="card chip"><div class="k">Residência</div><div class="v">Apartamento / flat</div></div>
+    <div class="card chip"><div class="k">Garagem</div><div class="v">Portão ou porteiro</div></div>
+    <div class="card chip"><div class="k">Placa</div><div class="v">PBW1171</div></div>
+    <div class="card chip"><div class="k">18–25 anos</div><div class="v">Sem cobertura</div></div>
+    <div class="card chip"><div class="k">Vence atual</div><div class="v">04/10/2026</div></div>
+    <div class="card chip"><div class="k">Tipo</div><div class="v">Renovação s/ sinistro</div></div>
+  </div>
+  <div class="duo">
+    <div class="reco">
+      <div class="star">★ Recomendação Conseg · 1 ano</div>
+      <h2>Allianz Básico</h2>
+      <p class="line">R$ 1.968,73 no ano · 6× de R$ 328,12 s/ juros no débito</p>
+      <div class="facts">
+        <div><span>Franquia reduzida</span><b>R$ 6.520,61</b></div>
+        <div><span>Casco</span><b>100% FIPE</b></div>
+        <div><span>RCF DM / DC</span><b>R$ 100 mil / 100 mil</b></div>
+        <div><span>Danos morais</span><b>R$ 10.000</b></div>
+        <div><span>APP morte / invalidez</span><b>R$ 20 mil / 20 mil</b></div>
+        <div><span>Carro reserva</span><b>15 dias c/ AR</b></div>
+        <div><span>Assistência 24h</span><b>Plano 3 · km livre</b></div>
+        <div><span>Vidros / faróis</span><b>Plano 2</b></div>
+      </div>
+    </div>
+    <div class="altcard">
+      <div class="star">Opção · trava 2 anos</div>
+      <h2>Porto Auto Mulher</h2>
+      <p class="line">R$ 4.354,80 em 2 anos · ≈ R$ 2.177 / ano</p>
+      <div class="facts">
+        <div><span>Vigência</span><b>04/10/26 – 04/10/28</b></div>
+        <div><span>Franquia</span><b>R$ 7.612,00</b></div>
+        <div><span>RCF DM / DC</span><b>R$ 100 mil / 100 mil</b></div>
+        <div><span>APP</span><b>R$ 5.000</b></div>
+        <div><span>Assistência</span><b>Km ilimitada</b></div>
+        <div><span>Reserva</span><b>15 dias básico</b></div>
+        <div><span>À vista Porto Bank</span><b>R$ 3.930,14</b></div>
+        <div><span>10× Porto Bank</span><b>R$ 413,70</b></div>
+      </div>
+    </div>
+  </div>
+  <p class="why"><b>Por que Allianz 1 ano.</b> Menor prêmio da mesa de 6 seguradoras. APP R$ 20 mil (Porto R$ 5 mil). Danos morais R$ 10 mil (as outras 5 ficam em R$ 5 mil). Franquia menor que a Porto (R$ 6.520 vs R$ 7.612). Residencial grátis. Líquido R$ 1.833,42 + IOF R$ 135,31. Cartão 10× de R$ 196,87 sem juros.</p>
+  <p class="why"><b>Quando escolher Porto 2 anos.</b> Trava o preço até 04/10/2028 e evita reajuste no segundo ano. Produto Auto Mulher (condutora Luciana). Assistência km ilimitada + rede Porto Serviço. Com descontos Itaú + Porto Bank + à vista cai para R$ 3.930,14 no bienio. Custa cerca de R$ 208 a mais por ano que a Allianz, com APP e franquia piores.</p>
+  <div class="ficha"><div class="k">Ficha do risco</div><p>Proponente: MARCELO DE CARVALHO PINTO DA LUZ · nasc. 14/04/1960 · CPF 296.216.231-20 · SQS 311 Bloco F, Brasília/DF. Condutora habitual: LUCIANA PESSOA CAIXETA PINTO DA LUZ · nasc. 22/04/1991 · feminino · casada · cônjuge · apto. Uso particular · 15 a 50 km/dia · sem kit gás, sem blindagem, sem rastreador. Chassi 93HRU1860LZ111508. Apólice Porto atual 12910955 · item 1 · sucursal 11 · vence 04/10/2026. Consultor Luiz Carlos · código 2489595 · filial 75.</p></div>
+  <footer class="foot"><div>Sofia · Conseg Seguros · André · SUSEP 202040149 · (61) 3345-7939 · (61) 99536-9057</div><div>1 / 2</div></footer>
+  <div class="rule-bottom"></div>
+</section>
+<section class="page">
+  <div class="rule-navy"></div><div class="rule-gold"></div>
+  <header class="brand"><div class="mark">C</div><div class="wordmark"><strong>Conseg</strong><span>Seguros · Família Cândido · 1991</span></div></header>
+  <p class="eyebrow">Mesa 28/09/2026 · 6 seguradoras + Porto 2 anos</p>
+  <h1>Comparativo completo.</h1>
+  <p class="why">Mesa 1 ano: 100% FIPE · RCF DM/DC R$ 100.000 · vidros sim · faróis/lanternas/retrovisores sim · isenção 1ª franquia não. Fonte: Allianz 507265275 + mesa 12661659/EB3C7726 + Porto 6303363579. Nenhum prêmio inventado.</p>
+  <table>
+    <thead><tr><th>Seguradora</th><th>Prêmio</th><th>Prazo</th><th>Franquia</th><th>APP</th><th>D. morais</th><th>Reserva</th></tr></thead>
+    <tbody>
+      <tr class="reco-row"><td>Allianz ★</td><td>R$ 1.968,73 · 6× / 10× 223,61</td><td>1 ano</td><td>R$ 6.520,61</td><td>R$ 20 mil</td><td>R$ 10 mil</td><td>15 d c/ AR</td></tr>
+      <tr class="porto-row"><td>Porto Auto Mulher</td><td>R$ 4.354,80 · ≈ 2.177/ano</td><td>2 anos</td><td>R$ 7.612,00</td><td>R$ 5 mil</td><td>—</td><td>15 d básico</td></tr>
+      <tr><td>Yelum</td><td>R$ 2.179,13 · 6× / 10× 255,23</td><td>1 ano</td><td>R$ 5.828,00</td><td>R$ 10 mil</td><td>R$ 5 mil</td><td>15 d s/ AR</td></tr>
+      <tr><td>HDI</td><td>R$ 2.395,01 · 6× / 10× 278,25</td><td>1 ano</td><td>R$ 7.711,97</td><td>R$ 10 mil</td><td>R$ 5 mil</td><td>15 d s/ AR</td></tr>
+      <tr><td>Bradesco</td><td>R$ 3.312,72 · 6× / 10× 331,29</td><td>1 ano</td><td>R$ 6.759,10</td><td>R$ 10 mil</td><td>R$ 5 mil</td><td>7 d s/ AR</td></tr>
+      <tr><td>Tokio Marine</td><td>R$ 3.423,57 · 5× / 12× 350,51</td><td>1 ano</td><td>R$ 6.527,00</td><td>R$ 10 mil</td><td>R$ 5 mil</td><td>15 d c/ AR</td></tr>
+      <tr><td>Mapfre</td><td>R$ 3.766,52 · 6× / 10× 440,68</td><td>1 ano</td><td>R$ 6.582,91</td><td>R$ 10 mil</td><td>R$ 5 mil</td><td>15 d c/ AR</td></tr>
+    </tbody>
+  </table>
+  <div class="cols">
+    <div class="navy"><h3>Por que Allianz Básico</h3><ol><li>Menor prêmio da mesa — R$ 1.968,73. Economia R$ 210 vs Yelum, R$ 1.344 vs Bradesco.</li><li>Melhor RC da mesa — APP R$ 20 mil e danos morais R$ 10 mil.</li><li>6× de R$ 328,12 sem juros no débito. Cartão 10× de R$ 196,87 sem juros.</li><li>Plano 3 km livre, residencial grátis e reserva 15 dias.</li></ol></div>
+    <div class="paper"><h3>Atenção ao emitir</h3><ul><li>Apólice Porto vence 04/10/2026. Sem aceite, o HR-V fica descoberto.</li><li>Confirmar garagem SIM com portão ou porteiro · CEP 70364-060.</li><li>Sem cobertura 18–25. Condutora = Luciana.</li><li>Allianz: vistoria prévia + questionário assinado.</li><li>Porto 2 anos: produto Auto Mulher. Descontos Itaú/Porto Bank só se aplicáveis.</li><li>A proposta não é apólice. Aceitação sujeita à análise.</li></ul></div>
+  </div>
+  <div class="legal"><div class="k">Upgrade Allianz · não é a mesa</div><p>Ampliado R$ 2.019,60 sobe RCF para 150/150 e danos morais para R$ 20 mil (+R$ 50,87). Completo R$ 2.089,68 · Master R$ 2.182,63 · Exclusivo R$ 2.374,61. Roubo e Furto R$ 1.385,32 não cobre colisão.</p></div>
+  <div class="cta"><div class="k">Próximo passo</div><h2>Para renovar na Allianz em 6× de R$ 328,12 — ou travar 2 anos na Porto — responda nesta conversa.</h2><p>Luiz Carlos · Conseg Corretora Nacional de Seguros LTDA · Rua das Carnaúbas, lote 4, sala 403 · Ed. Plaza Mall · Águas Claras · Brasília/DF<br>consegcn@terra.com.br · SUSEP 202040149 · (61) 3345-7939 · (61) 99536-9057 · Brasília desde 1991</p></div>
+  <footer class="foot"><div>Sofia · Conseg Seguros · André · SUSEP 202040149 · (61) 3345-7939 · (61) 99536-9057</div><div>2 / 2</div></footer>
+  <div class="rule-bottom"></div>
+</section>
+</body>
+</html>
