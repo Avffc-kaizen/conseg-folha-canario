@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8" />
+<title>Conseg · Proposta Auto · Jaqueline Maia · Bradesco Song Pro GL</title>
+<style>
+  @page { size: A4; margin: 0; }
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+  html, body { background: #d9d1c0; color: #12233f; font-family: Inter, "IBM Plex Sans", Arial, sans-serif; -webkit-font-smoothing: antialiased; print-color-adjust: exact; -webkit-print-color-adjust: exact; }
+  .page { width: 210mm; min-height: 297mm; background: #f6f1e4; margin: 0 auto 24px; padding: 16px 18px 22px; position: relative; overflow: hidden; }
+  .rule-navy { position: absolute; top: 0; left: 0; right: 0; height: 7px; background: #12233f; }
+  .rule-gold { position: absolute; top: 7px; left: 0; right: 0; height: 3px; background: #c6a46a; }
+  .rule-bottom { position: absolute; bottom: 0; left: 0; right: 0; height: 6px; background: #12233f; }
+  .brand { display: flex; align-items: center; gap: 10px; margin: 8px 0 10px; }
+  .mark { width: 36px; height: 36px; border-radius: 50%; background: #12233f; color: #f6f1e4; border: 1.5px solid #c6a46a; display: flex; align-items: center; justify-content: center; font-family: Fraunces, Georgia, serif; font-style: italic; font-size: 20px; }
+  .wordmark strong { font-family: Fraunces, Georgia, serif; font-weight: 500; font-size: 18px; display: block; }
+  .wordmark span { font-size: 8px; letter-spacing: 0.16em; text-transform: uppercase; color: #6b6558; }
+  .eyebrow { font-size: 9px; letter-spacing: 2.2px; text-transform: uppercase; color: #8a8376; font-weight: 500; }
+  .meta-line { font-size: 11px; color: #6b6558; margin: 3px 0 6px; }
+  h1 { font-family: Fraunces, Georgia, serif; font-weight: 450; font-size: 24px; letter-spacing: -0.025em; line-height: 1.12; }
+  .lede { font-size: 13px; color: #5c574c; margin: 3px 0 8px; }
+  .hero { display: grid; grid-template-columns: 1.15fr 1fr; gap: 10px; margin-bottom: 8px; }
+  .hero img { width: 100%; height: 118px; object-fit: cover; object-position: 50% 55%; border-radius: 10px; border: 1px solid #d7d0c2; background: #efe6d6; }
+  .hero .cap { font-size: 9px; color: #8a8376; margin-top: 3px; }
+  .grid-4 { display: grid; grid-template-columns: repeat(4, 1fr); gap: 7px; margin-bottom: 8px; }
+  .card { background: #fffcf6; border: 1px solid #d7d0c2; border-radius: 8px; padding: 7px 9px; }
+  .card .k { font-size: 8px; letter-spacing: 0.14em; text-transform: uppercase; color: #8a8376; font-weight: 500; }
+  .card .v { font-family: Fraunces, Georgia, serif; font-size: 13px; margin-top: 2px; }
+  .card .s { font-size: 10px; color: #6b6558; margin-top: 2px; }
+  .chip .v { font-family: Inter, sans-serif; font-weight: 600; font-size: 11.5px; }
+  .reco { background: #12233f; color: #f6f1e4; border-radius: 12px; padding: 12px 14px; margin: 8px 0; }
+  .reco .star { font-size: 8.5px; letter-spacing: 0.16em; text-transform: uppercase; color: #d9c9a3; font-weight: 600; }
+  .reco h2 { font-family: Fraunces, Georgia, serif; font-weight: 450; font-size: 20px; margin: 3px 0 2px; }
+  .reco .line { font-size: 12px; margin-bottom: 8px; }
+  .facts { display: grid; grid-template-columns: 1fr 1fr; gap: 3px 14px; font-size: 10.5px; }
+  .facts span { color: #d9c9a3; }
+  .facts b { color: #f6f1e4; font-weight: 600; float: right; }
+  .why { font-size: 11px; color: #6b6558; line-height: 1.4; margin-bottom: 8px; }
+  .ficha, .legal { background: #fffcf6; border: 1px solid #d7d0c2; border-radius: 8px; padding: 8px 11px; margin-bottom: 8px; }
+  .ficha .k, .legal .k { font-size: 8px; letter-spacing: 0.14em; text-transform: uppercase; color: #8a8376; font-weight: 600; margin-bottom: 3px; }
+  .ficha p, .legal p { font-size: 10.5px; color: #6b6558; line-height: 1.4; }
+  table { width: 100%; border-collapse: collapse; font-size: 10px; margin: 8px 0 10px; }
+  th { background: #12233f; color: #c6a46a; text-align: left; padding: 5px 6px; font-size: 8px; letter-spacing: 0.06em; text-transform: uppercase; }
+  td { padding: 4px 6px; border-bottom: 1px solid #efe6d6; }
+  tr:nth-child(even) td { background: #efe6d6; }
+  tr.reco-row td { background: #c6a46a; font-weight: 600; color: #12233f; }
+  .cols { display: grid; grid-template-columns: 1fr 1fr; gap: 8px; margin-bottom: 8px; }
+  .navy { background: #12233f; color: #f6f1e4; border-radius: 10px; padding: 11px 13px; }
+  .navy h3 { color: #c6a46a; font-size: 9px; letter-spacing: 0.14em; text-transform: uppercase; margin-bottom: 6px; }
+  .navy li { font-size: 11px; margin: 0 0 4px 14px; }
+  .paper { background: #fffcf6; border: 1px solid #d7d0c2; border-radius: 10px; padding: 11px 13px; }
+  .paper h3 { font-size: 9px; letter-spacing: 0.14em; text-transform: uppercase; color: #8a8376; margin-bottom: 6px; }
+  .paper li { font-size: 11px; color: #6b6558; margin: 0 0 4px 14px; }
+  .cta { background: #12233f; color: #f6f1e4; border-radius: 10px; padding: 11px 13px; margin-top: 6px; }
+  .cta .k { font-size: 9px; letter-spacing: 0.14em; text-transform: uppercase; color: #c6a46a; }
+  .cta h2 { font-family: Fraunces, Georgia, serif; font-size: 14px; margin: 3px 0; }
+  .cta p { font-size: 10.5px; color: #d9c9a3; line-height: 1.4; }
+  .foot { position: absolute; left: 18px; right: 18px; bottom: 10px; display: flex; justify-content: space-between; font-size: 9px; color: #6b6558; }
+  .print { position: sticky; top: 12px; z-index: 2; display: flex; justify-content: center; margin: 12px; }
+  .print button { background: #12233f; color: #f6f1e4; border: 0; border-radius: 999px; padding: 10px 18px; font: 600 13px Inter, sans-serif; cursor: pointer; }
+  @media print { body { background: #f6f1e4; } .print { display: none; } .page { margin: 0; box-shadow: none; page-break-after: always; } }
+</style>
+</head>
+<body>
+<div class="print"><button onclick="window.print()">Baixar / imprimir PDF</button></div>
+<section class="page">
+  <div class="rule-navy"></div><div class="rule-gold"></div>
+  <header class="brand"><div class="mark">C</div><div class="wordmark"><strong>Conseg</strong><span>Seguros · Família Cândido · 1991</span></div></header>
+  <p class="eyebrow">Proposta personalizada · Renovação</p>
+  <p class="meta-line">Bradesco 0832707605/01 · Mesa 12659332/C9D96506 · 30/09/2026</p>
+  <h1>Sua proposta de Seguro Auto.</h1>
+  <p class="lede">BYD Song Pro GL 1.5 Aut. Híbrido · Jaqueline Maia Fernandes da Cruz</p>
+  <div class="hero">
+    <div>
+      <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/b/b7/BYD_Song_Pro_DM-i_2024_facelift_002.jpg/1280px-BYD_Song_Pro_DM-i_2024_facelift_002.jpg" alt="BYD Song Pro DM-i — mesmo corpo do GL 2026/2027" />
+      <p class="cap">Song Pro DM-i · referência visual do GL 2026/2027 · placa UJC4D43 · híbrido plug-in</p>
+    </div>
+    <div class="grid-4" style="grid-template-columns:1fr 1fr;margin:0;">
+      <div class="card"><div class="k">Cliente / condutora</div><div class="v">Jaqueline Maia</div><div class="s">CPF 142.463.092-49</div></div>
+      <div class="card"><div class="k">Nascimento</div><div class="v">24/11/1963</div><div class="s">feminino · casada</div></div>
+      <div class="card"><div class="k">FIPE</div><div class="v">R$ 173.433</div><div class="s">cód. 095013-0 · 100% VMR</div></div>
+      <div class="card"><div class="k">Bônus</div><div class="v">Classe 9</div><div class="s">1 sinistro · Yelum atual</div></div>
+    </div>
+  </div>
+  <div class="grid-4">
+    <div class="card chip"><div class="k">Uso</div><div class="v">Particular</div></div>
+    <div class="card chip"><div class="k">Pernoite</div><div class="v">CEP 71681-991</div></div>
+    <div class="card chip"><div class="k">Residência</div><div class="v">Casa / sobrado</div></div>
+    <div class="card chip"><div class="k">Garagem</div><div class="v">Portão ou porteiro</div></div>
+    <div class="card chip"><div class="k">Placa</div><div class="v">UJC4D43</div></div>
+    <div class="card chip"><div class="k">18–25 anos</div><div class="v">Sem cobertura</div></div>
+    <div class="card chip"><div class="k">Vence atual</div><div class="v">03/10/2026</div></div>
+    <div class="card chip"><div class="k">Tipo</div><div class="v">Renovação c/ 1 sinistro</div></div>
+  </div>
+  <div class="reco">
+    <div class="star">★ Recomendação Conseg · 1 ano</div>
+    <h2>Bradesco Auto Tradicional</h2>
+    <p class="line">R$ 5.651,80 no ano · 5× de R$ 1.130,36 s/ juros no cartão · cartão Bradesco 5× de R$ 1.073,84</p>
+    <div class="facts">
+      <div><span>Franquia reduzida</span><b>R$ 8.160,02</b></div>
+      <div><span>Casco</span><b>100% FIPE</b></div>
+      <div><span>RCF DM / DC</span><b>R$ 150 mil / 150 mil</b></div>
+      <div><span>Danos morais</span><b>R$ 10.000</b></div>
+      <div><span>APP morte / invalidez</span><b>R$ 10 mil / 10 mil</b></div>
+      <div><span>Carro reserva</span><b>15 dias Plus</b></div>
+      <div><span>Assistência 24h</span><b>Prime · km ilimitado</b></div>
+      <div><span>Vidros</span><b>Protegido Plus</b></div>
+    </div>
+  </div>
+  <p class="why"><b>Por que Bradesco.</b> Menor prêmio da mesa de 4 seguradoras — R$ 156 abaixo da Tokio, R$ 539 da Mapfre e R$ 2.547 da HDI. Franquia R$ 8.160, cerca de R$ 3.000 menor que as outras três. Única da mesa em 5× sem juros. Líquido R$ 5.263,38 + IOF R$ 388,43. Cartão Bradesco com 5% de desconto: à vista R$ 5.369,18 ou 12× de R$ 447,44 sem juros. Cobertura 0 km por 6 meses em indenização integral, Carta Verde grátis e extensão Mercosul.</p>
+  <p class="why"><b>Tokio fica R$ 155 mais cara</b> e é a única com teto solar na mesa. Song Pro GL de entrada normalmente não traz teto solar — a cobertura extra não justifica o prêmio nem a franquia de R$ 11.094.</p>
+  <div class="ficha"><div class="k">Ficha do risco</div><p>Proponente e condutora: JAQUELINE MAIA FERNANDES DA CRUZ · nasc. 24/11/1963 · CPF 142.463.092-49 · feminino · casada · Rodovia DF-001, Brasília/DF. Uso particular · 15 a 50 km/dia · casa/sobrado · garagem com portão ou porteiro · CEP 71681-991 · sem kit gás, sem blindagem, sem rastreador. Chassi 92VC74C46VK004234. Renovação Yelum · cia 518 · 1 sinistro · bônus 9 · vence 03/10/2026. Consultor Luiz Carlos · sucursal 836 · CPD 435093.</p></div>
+  <footer class="foot"><div>Sofia · Conseg Seguros · André · SUSEP 202040149 · (61) 3345-7939 · (61) 99536-9057</div><div>1 / 2</div></footer>
+  <div class="rule-bottom"></div>
+</section>
+<section class="page">
+  <div class="rule-navy"></div><div class="rule-gold"></div>
+  <header class="brand"><div class="mark">C</div><div class="wordmark"><strong>Conseg</strong><span>Seguros · Família Cândido · 1991</span></div></header>
+  <p class="eyebrow">Mesa 25/09/2026 · 4 seguradoras · validade 30/09</p>
+  <h1>Comparativo completo.</h1>
+  <p class="why">Todas 100% FIPE · RCF DM/DC R$ 150.000 · danos morais R$ 10.000 · APP R$ 10.000 · vidros + faróis/lanternas/retrovisores · reserva 15 dias c/ AR · km ilimitada · isenção 1ª franquia não. Fonte: mesa 12659332/C9D96506 + Bradesco 0832707605/01. Nenhum prêmio inventado.</p>
+  <table>
+    <thead><tr><th>Seguradora</th><th>Prêmio</th><th>Parcelas</th><th>Franquia</th><th>Teto solar</th><th>Reserva</th></tr></thead>
+    <tbody>
+      <tr class="reco-row"><td>Bradesco ★</td><td>R$ 5.651,80</td><td>5× s/ juros</td><td>R$ 8.160,02</td><td>Não</td><td>15 d c/ AR</td></tr>
+      <tr><td>Tokio Marine</td><td>R$ 5.807,36</td><td>12× s/ juros</td><td>R$ 11.094,00</td><td>Sim</td><td>15 d c/ AR</td></tr>
+      <tr><td>Mapfre</td><td>R$ 6.191,18</td><td>12× s/ juros</td><td>R$ 11.892,50</td><td>Não</td><td>15 d c/ AR</td></tr>
+      <tr><td>HDI</td><td>R$ 8.198,68</td><td>12× s/ juros</td><td>R$ 11.202,05</td><td>Não</td><td>15 d c/ AR</td></tr>
+    </tbody>
+  </table>
+  <div class="cols">
+    <div class="navy"><h3>Por que Bradesco</h3><ol><li>Menor prêmio da mesa — R$ 5.651,80. Economia R$ 155 vs Tokio, R$ 2.547 vs HDI.</li><li>Menor franquia — R$ 8.160 contra R$ 11 mil das outras.</li><li>Única em 5× sem juros. Cartão Bradesco 5% off: 12× de R$ 447,44.</li><li>0 km por 6 meses, Vidro Plus, Assist Prime, Carta Verde e Mercosul.</li></ol></div>
+    <div class="paper"><h3>Como pagar o Bradesco</h3><ul><li>Cartão (mesa): 5× de R$ 1.130,36 s/ juros.</li><li>Cartão Bradesco: à vista R$ 5.369,18 · 5× R$ 1.073,84 · 10× R$ 536,92 · 12× R$ 447,44.</li><li>Débito: 1× R$ 5.651,77 até 10× R$ 565,17 s/ juros.</li><li>Carnê: 6× s/ juros; 7× em diante com juros.</li><li>Desconto correntista 6% já no cálculo. Residencial grátis se correntista.</li></ul></div>
+  </div>
+  <div class="legal"><div class="k">Atenção ao emitir</div><p>Apólice Yelum vence 03/10/2026. Mesa vale até 30/09. Bradesco até 02/10. Sem aceite, o Song Pro fica descoberto. Confirmar garagem SIM com portão ou porteiro · CEP 71681-991. Sem cobertura 18–25. Condutora = a própria segurada. 1 sinistro informado — não omitir. Cálculo não pressupõe aceitação do risco. A proposta não é apólice.</p></div>
+  <div class="cta"><div class="k">Próximo passo</div><h2>Para renovar no Bradesco em 5× de R$ 1.130,36 — ou 12× de R$ 447,44 no cartão Bradesco — responda nesta conversa.</h2><p>Luiz Carlos · Conseg Corretora Nacional de Seguros LTDA · Rua das Carnaúbas, lote 4, sala 403 · Ed. Plaza Mall · Águas Claras · Brasília/DF<br>consegcn@terra.com.br · SUSEP 202040149 · (61) 3345-7939 · (61) 99536-9057 · Brasília desde 1991</p></div>
+  <footer class="foot"><div>Sofia · Conseg Seguros · André · SUSEP 202040149 · (61) 3345-7939 · (61) 99536-9057</div><div>2 / 2</div></footer>
+  <div class="rule-bottom"></div>
+</section>
+</body>
+</html>
